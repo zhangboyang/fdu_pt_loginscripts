@@ -5,3 +5,8 @@ login to pt.vm.fudan.edu.cn and bind pt with tac verification automatically
 usage:
   1. edit 'run.sh', write your information in it
   2. run 'run.sh'
+
+note:
+  if you get 'bind pt with tac verification ... failed' again and again,
+  it may has wget error 'ERROR: The certificate of `tac.fudan.edu.cn' is not trusted.',
+  try add '--no-check-certificate' to wget options in 'pt_bind.sh'
