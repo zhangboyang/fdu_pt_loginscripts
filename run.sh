@@ -9,7 +9,7 @@ portal_password=PUT_YOUR_PORTAL_PASSWORD_HERE
 pt_username=PUT_YOUR_FDUPT_USERNAME_HERE
 pt_password=PUT_YOUR_FDUPT_PASSWORD_HERE
 
-# first, login to portal
+# first, login to portal (overwrite cookies.txt)
 echo -n 'login to www.portal.fudan.edu.cn ... '
 if ./portal_login.sh "$portal_stuid" "$portal_password"; then echo 'ok'; else echo 'failed'; exit 1; fi
 

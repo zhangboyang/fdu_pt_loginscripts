@@ -10,7 +10,7 @@ stuid=$1
 password=$2
 
 # get jsessionid
-if ! wget -q -O '/dev/null' --load-cookies cookies.txt --save-cookies cookies.txt --keep-session-cookies 'http://www.portal.fudan.edu.cn/main/loginIndex.do?ltype=1'; then
+if ! wget -q -O '/dev/null' --save-cookies cookies.txt --keep-session-cookies 'http://www.portal.fudan.edu.cn/main/loginIndex.do?ltype=1'; then
     exit 1
 fi
 

@@ -11,7 +11,7 @@ password=$2
 
 # calc hash_password
 first_half=`echo -n "$username$password" | sha1sum | cut -d \  -f 1`
-second_half=`wget -q -O - --save-cookies cookies.txt --keep-session-cookies 'http://pt.vm.fudan.edu.cn/index.php' | grep 'form action' | cut -d \' -f 2`
+second_half=`wget -q -O - --load-cookies cookies.txt --save-cookies cookies.txt --keep-session-cookies 'http://pt.vm.fudan.edu.cn/index.php' | grep 'form action' | cut -d \' -f 2`
 hash_password=`echo -n "$first_half$second_half" | sha1sum | cut -d \  -f 1`
 if [ "$second_half" = "" ]; then exit 1; fi
 
