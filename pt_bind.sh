@@ -1,6 +1,6 @@
 #!/bin/sh
 # a shellscript for bind pt using tac verification
-# requirements   : already login to pt and portal, cookies saved in cookies.txt
+# requirements   : already login to pt and uis, cookies saved in cookies.txt
 # reqiured tools : grep wget
 
 # get redirecturl, if redirecturl is not empty means succeed
