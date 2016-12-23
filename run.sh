@@ -4,10 +4,10 @@
 #                  1 means failed
 
 # provide your information
-uis_stuid=PUT_YOUR_STUDENT_ID_HERE
-uis_password=PUT_YOUR_UIS_PASSWORD_HERE
-pt_username=PUT_YOUR_FDUPT_USERNAME_HERE
-pt_password=PUT_YOUR_FDUPT_PASSWORD_HERE
+uis_stuid="PUT_YOUR_STUDENT_ID_HERE"
+uis_password="PUT_YOUR_UIS_PASSWORD_HERE"
+pt_username="PUT_YOUR_FDUPT_USERNAME_HERE"
+pt_password="PUT_YOUR_FDUPT_PASSWORD_HERE"
 
 # first, login to uis (overwrite cookies.txt)
 echo -n 'login to www.uis.fudan.edu.cn ... '

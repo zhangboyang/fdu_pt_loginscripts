@@ -6,8 +6,8 @@
 # reqiured tools : wget grep
 
 # set variables
-stuid=$1
-password=$2
+stuid="$1"
+password="$2"
 
 # get jsessionid
 if ! wget -q -O '/dev/null' --save-cookies cookies.txt --keep-session-cookies 'https://uis2.fudan.edu.cn/amserver/UI/Login'; then
